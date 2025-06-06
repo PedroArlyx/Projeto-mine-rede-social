@@ -2,65 +2,73 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/home.css">
-    <title>mine-rede-social</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <title>Mine Rede Social</title>
 </head>
 
 <body class="body">
-    <div class="form">
-        <h3>
-            Seja bem vindo ao Sistema!!
-        </h3>
-        <div class="input-div">
-            <input placeholder="Titulo da postagem" />
-            <input placeholder="Digite seu post..." />
-            <input type="file" placeholder="Escolhar Arquivo" />
+
+
+    <div class="form-toolbar">
+        <div class="profile-pic"></div>
+        <div id="usuario-logado" class="user-name"></div>
+        <input class="search-input" placeholder="Pesquisar Perfil... 🔍" />
+        <div class="logo-secondary"></div>
+        <div class="logo-main"></div>
+    </div>
+
+
+    <div class="form-basic">
+        <div class="input-group">
+            <input id="titulo" class="input-text" placeholder="Título da postagem..." />
+            <input id="comentario" class="input-text" placeholder="Digite seu comentário..." />
+            <input id="arquivo" type="file" />
             <div>
-                <button type="submit" class="button-submit"><a href="./home.html">Publicar</a> </button>
-                <button type="submit" class="button-submit"><a href="./cadatro.html">Sair</a></button>
+                <button onclick="publicar()" id="btnPublicar" type="button" class="button-submit">Publicar</button>
+                <button onclick="sair()" type="button" class="button-submit">Sair</button>
             </div>
         </div>
-
     </div>
-    <div class="form1">
-        <div class="image1">
-            <div class="lista">
-                <div class="titulo1">
-                    <h3>Usuario: Pedro Arlyx</h3>
-                    <p>exemplo:</p>
 
+
+    <div id="form-images" class="form-horizontal">
+        <div class="post-image-1">
+            <div class="post-container">
+                <div class="post-title">
+                    <h3>Usuário: Pedro Arlyx</h3>
+                    <p>Titulo: Ola meu primeiro post</p>
+                    <p>Comentario: top</p>
                 </div>
-
             </div>
-
-        </div>
-        <div class="image2">
-            <div class="lista">
-                <div class="titulo1">
-                    <h3>Usuario: Pedro Arlyx</h3>
-                    <p>exemplo:</p>
-
-                </div>
-
-            </div>
-
-        </div>
-        <div class="image">
-            <div class="lista">
-                <div class="titulo1">
-                    <h3>Usuario: Pedro Arlyx</h3>
-                    <p>exemplo:</p>
-
-                </div>
-
-            </div>
-
         </div>
 
+        <div class="post-image-2">
+            <div class="post-container">
+                <div class="post-title">
+                    <h3>Usuário: Pedro Arlyx</h3>
+                    <p>Titulo: Ola meu primeiro post</p>
+                    <p>Comentario: top</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="post-image-3">
+            <div class="post-container">
+                <div class="post-title">
+                    <h3>Usuário: Pedro Arlyx</h3>
+                    <p>Titulo:  Ola meu primeiro post</p>
+                    <p>Comentario: top</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src="./javaScript/home.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", mostrarNomeUsuario);
+    </script>
 </body>
 
 </html>

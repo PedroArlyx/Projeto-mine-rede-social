@@ -1,43 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/cadastro.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/cadastro.css" />
     <title>mine-rede-social</title>
 </head>
 
 <body>
-    <form class="form">
-        <h3 class="text">
-            Cadastro
-        </h3>
-        <div class="input-div">
-            <label for="name">Nome: </label>
-            <input nome="nome" placeholder="Digite seu nome " required />
+    <form class="form-container" onsubmit="salvarElementos(event)">
+        <div class="logo-image">
+          
         </div>
 
-        <div class="input-div">
-            <label for="name">Email: </label>
-            <input type="email" name="email" placeholder="Digite seu e-mail " required />
-
+        <div class="input-group">
+            <label for="nome">Nome:</label>
+            <input id="nome" name="nome" placeholder="Digite seu nome" />
         </div>
 
-        <div class="input-div">
-            <label for="password">Senha: </label>
-            <input type="password" nname="password" placeholder="Digite sua senha" required minlength="3"
-                maxlength="8" />
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" />
         </div>
-        <div class="pat_b">
-            <button type="submit" class="button-submit"><a href="./home.html">Cadastrar</a></button>
-            <div class="buttons">
-                <a class="a3">já tem conta?</a>
-                <a class="a2" href="./index.html" tanget="_blank">Faça login</a>
+
+        <div class="input-group">
+            <label for="password">Senha:</label>
+            <input id="password" type="password" name="password" placeholder="Digite sua senha..." />
+        </div>
+
+        <div class="button-panel">
+            <button type="submit" class="submit-button">Cadastrar</button>
+
+            <div class="buttons-row">
+                <a class="link-secondary">Já tem conta?</a>
+                <a class="link-primary" href="./login.html" target="_blank">Faça login</a>
             </div>
         </div>
     </form>
 
+    <script src="./javaScript/cadastro.js"></script>
 </body>
 
 </html>

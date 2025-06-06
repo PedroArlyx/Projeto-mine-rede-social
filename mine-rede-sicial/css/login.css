@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp4247203.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 570px;
+    justify-content: center;
+    padding: 20px;
+    gap: 6px;
+    border-radius: 20px;
+    background: linear-gradient(hsla(203, 100%, 74%, 0), rgb(0, 0, 0));
+    box-shadow: 0 0 20px #78cbff20;
+    font-size: 26px;
+    color: aliceblue;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.submit-button {
+    border-radius: 12px;
+    color: white;
+    background-color: rgba(122, 122, 122, 0);
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    box-shadow: 0 0 20px #d9d9d9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: rgba(122, 122, 122, 0.3);
+}
+
+.text-input {
+    box-shadow: 0 0 20px #d9d9d9;
+    background-color: rgba(51, 52, 70, 0.33);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.link {
+    color: #f6f6f6;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.link-highlight {
+    color: #78cbff;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.title-text {
+    font-size: 40px;
+    display: flex;
+    text-decoration: none;
+    margin: 0;
+}
+
+.logo-image {
+    background-image: url('../imagem/cute-hollow-knight-face-sticker-cover-removebg-preview.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: -10px;
+}
+.link-spacing {
+    margin-right: 15px;
+  }
+
